@@ -19,7 +19,7 @@ if (!ep.test(em)) {
 } else {
       e.textContent = '';
       console.log(em);
-      fetch('http://localhost/solia-backend/waitlist_application/email_signup.php', {
+      fetch('http://localhost/solia-backend/backend/waitlist_application/email_signup.php', {
         //changes needed here later for backend pointing
         method: 'POST',
         headers: {
@@ -92,7 +92,7 @@ const coda = (em, co_in, co) => {
 
 const wvs = (em,co_in, co) => {
   
-  fetch("http://localhost/solia-backend/waitlist_application/verification_sender.php", {
+  fetch("http://localhost/solia-backend/backend/waitlist_application/verification_sender.php", {
     method: "POST",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
@@ -136,7 +136,7 @@ const wvv = (co_in, co, handleClick) => {
     const em = i.value.trim();
     const eElem = document.getElementById('er');
 
-    fetch("http://localhost/solia-backend/waitlist_application/verify_code.php", {
+    fetch("http://localhost/solia-backend/backend/waitlist_application/verify_code.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
