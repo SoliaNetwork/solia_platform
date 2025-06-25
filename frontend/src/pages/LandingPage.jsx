@@ -20,7 +20,7 @@ if (!ep.test(em)) {
 
       e.textContent = '';
       console.log(em);
-      fetch('http://localhost/solia-backend/backend/waitlist_application/email_signup.php', {
+      fetch('https://gestech.co.mz/api/waitlist_application/email_signup.php', {
         //changes needed here later for backend pointing
         method: 'POST',
         headers: {
@@ -95,7 +95,7 @@ const coda = (em, co_in, co) => {
 
 const wvs = (em,co_in, co) => {
   
-  fetch("http://localhost/solia-backend/backend/waitlist_application/verification_sender.php", {
+  fetch("https://gestech.co.mz/api/waitlist_application/verification_sender.php", {
     method: "POST",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
@@ -142,7 +142,7 @@ var inv_link = document.getElementById('inv_link');
   var inv = document.getElementById('inv');
 var co_div = document.getElementById('co_div');
 
-    fetch("http://localhost/solia-backend/backend/waitlist_application/verify_code.php", {
+    fetch("https://gestech.co.mz/api/waitlist_application/verify_code.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
@@ -177,7 +177,7 @@ const invite = () => {
     var inv_count = document.getElementById('inv_count');
     var em = document.getElementById('in');
 
-    fetch("http://localhost/solia-backend/backend/waitlist_application/invite_link_requester.php", {
+    fetch("https://gestech.co.mz/api/waitlist_application/invite_link_requester.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
@@ -195,7 +195,7 @@ const invite = () => {
     .catch(console.error);
 
 
-    fetch("http://localhost/solia-backend/backend/waitlist_application/get_user_rank.php", {
+    fetch("https://gestech.co.mz/api/waitlist_application/get_user_rank.php", {
     method: "POST",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
@@ -216,7 +216,7 @@ const invite = () => {
     console.error(err);
   });
 var towa = document.getElementById('towa');
-      fetch("http://localhost/solia-backend/backend/waitlist_application/waitlist_count.php", {
+      fetch("https://gestech.co.mz/api/waitlist_application/waitlist_count.php", {
     method: "GET",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
